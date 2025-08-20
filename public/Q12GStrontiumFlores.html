@@ -22,8 +22,7 @@
             let tip = parseFloat(document.getElementById("tip").value);
             let serviceCharge = parseFloat(document.getElementById("serviceCharge").value);
 
-            // formula: totalCost = mp + tip + (%sc / 100 * mp)
-            let totalCost = mp + tip + (sc / 100 * mp);
+            let totalCost = mealPrice + tip + (serviceCharge / 100 * mealPrice);
 
             document.getElementById("output").innerHTML = "Total Meal: " + totalCost.toFixed(2);
         }
